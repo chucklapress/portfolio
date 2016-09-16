@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from app.views import IndexView
+from app.views import IndexView, AboutView, ContactView
 from django.conf.urls.static import static
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
@@ -23,7 +23,9 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('^', include('django.contrib.auth.urls')),
-    url(r'^$', IndexView.as_view(), name='index_view')
+    url(r'^$', IndexView.as_view(), name='index_view'),
+    url(r'^about$', AboutView.as_view(), name='about_view'),
+    url(r'^contact$', ContactView.as_view(), name='contact_view')
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

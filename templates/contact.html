@@ -1,0 +1,63 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal portfolio" />
+    <meta name="author" content="http://www.chucklapress.com" />
+
+    <title>Personal portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="app/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="app/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header>
+		<!-- /////////////////////////////////////////Navigation -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		    <div class="container">
+		        <!-- Nav -->
+		        <div class="navbar-header">
+		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+		                <span class="sr-only">Toggle navigation</span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		            </button>
+		            <a class="navbar-brand" href="https://github.com/chucklapress">GitHub repo</a>
+		        </div>
+		        <!-- Nav collapse -->
+		        <div class="collapse navbar-collapse" id="menu">
+		            <ul class="nav navbar-nav navbar-left">
+		                <li><a href="{% url 'index_view' %}">Home</a></li>
+		                <li><a href="{% url 'about_view' %}">About</a></li>
+		                <li><a href="{% url 'contact_view' %}">Contact</a></li>
+		            </ul>
+		        </div>
+		        <!-- /.navbar-collapse -->
+		    </div>
+		    <!-- /.container -->
+		</nav>
+		<!-- Navigation -->
+	</header>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="container">
+    <h4>Just a landing page</h4>
+    </div>
+  </body>
+</html>

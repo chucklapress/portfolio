@@ -1,0 +1,142 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal portfolio" />
+    <meta name="author" content="http://www.chucklapress.com" />
+
+    <title>Personal portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/static/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header>
+		<!-- /////////////////////////////////////////Navigation -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		    <div class="container">
+		        <!-- Nav -->
+		        <div class="navbar-header">
+		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+		                <span class="sr-only">Toggle navigation</span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		            </button>
+		            <a class="navbar-brand" href="https://github.com/chucklapress">GitHub repo</a>
+		        </div>
+		        <!-- Nav collapse -->
+		        <div class="collapse navbar-collapse" id="menu">
+		            <ul class="nav navbar-nav navbar-left">
+		                <li><a href="#">Home</a></li>
+		                <li><a href="#">About</a></li>
+		                <li><a href="#">Contact</a></li>
+		            </ul>
+		        </div>
+		        <!-- /.navbar-collapse -->
+		    </div>
+		    <!-- /.container -->
+		</nav>
+		<!-- Navigation -->
+	</header>
+	<!-- /////////////////////////////////////////Content -->
+	<div id="page-content">
+		<div class="container">
+			<div class="heading">
+				<h3>print('Hello World')</h3>
+				<span>Chuck LaPress portfolio of work</span>
+			</div>
+			<div class="content">
+				<div class="row box-item">
+					<div class="col-md-6">
+						<img src="static/images/tipplyapp.png" alt="">
+					</div>
+					<div class="col-md-6">
+						<h3>Welcome to TIPPLY</h3>
+						<span>web app designed to assist restaurant owners with staff and turnover</span>
+						<p>This app was my final project of the bootcamp program. It was the second app that I launched on Heroku and was a blending of a number of django projects</p>
+						<a href="https://tipply-app.herokuapp.com/" class="btn btn-primary">View Project</a>
+					</div>
+				</div>
+				<hr>
+				<div class="row box-item">
+					<div class="col-md-6">
+						<img src="static/images/moviereview.png" alt="">
+					</div>
+					<div class="col-md-6">
+						<h3>Movie review app</h3>
+						<span>Django project that uses data to display top rated movies</span>
+						<p>This project required taking large csv files and building models to store the information then using foreign keys to pear the movies with the rater and produce the rating. The primary purpose of this was to do large data migrations</p>
+						<a href="https://github.com/chucklapress/movie_review_new" class="btn btn-primary">View Project</a>
+					</div>
+				</div>
+				<hr>
+				<div class="row box-item">
+					<div class="col-md-6">
+						<img src="static/images/googleapp.png" alt="">
+					</div>
+					<div class="col-md-6">
+						<h3>Google map app</h3>
+						<span>This was my first app to move from a local to production enviroment, I kept it very simple to make the transition to production simple</span>
+						<p>This was completely designed to get a Django app deployed on heroku it was also designed to utilize an api and final uses a library item to record lat and long call for locations mapped.</p>
+						<a href="https://google-map-app.herokuapp.com/people" class="btn btn-primary">View Project</a>
+					</div>
+				</div>
+        <div class="content">
+  				<div class="row box-item">
+  					<div class="col-md-6">
+  						<img src="static/images/craigappapi.png" alt="">
+  					</div>
+  					<div class="col-md-6">
+  						<h3>Craiglist clone</h3>
+  						<span>App that was converted to apply API end points</span>
+  						<p>This application is the basis for us learning about Django Rest Frameworks we utilized serializers and views to allow API calls as well as editing and delete files through the API side.</p>
+  						<a href="https://github.com/chucklapress/craig_list/" class="btn btn-primary">View Project</a>
+  					</div>
+  				</div>
+  				<hr>
+  				<div class="row box-item">
+  					<div class="col-md-6">
+  						<img src="static/images/restaurantapp.png" alt="">
+  					</div>
+  					<div class="col-md-6">
+  						<h3>Restaurant simple POS</h3>
+  						<span>App to simulate point of sale back end including menu item, staff, ticket times and check service</span>
+  						<p>Project to replicate a simple restaurant point of sales machine that stores and displays menu, allows staff to clock in, place orders indicate that orders are prepared and check is serviced.</p>
+  						<a href="https://github.com/chucklapress/restaurant_django" class="btn btn-primary">View Project</a>
+  					</div>
+  				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- /////////////////////////////////////////Footer -->
+	<footer>
+		<div class="wrap-footer">
+			<div class="container">
+				<div class="row">
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer -->
+<!-- jQuery -->
+<script src="static/js/jquery-1.11.3.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="static/js/bootstrap.min.js"></script>
+</body>
+</html>

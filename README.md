@@ -4,11 +4,7 @@ portfolio to display examples of work to date
 deployed on Heroku @ chuck-portfolio.herokuapp.com
 
 
-
-
-
-
-Utilized
+##Utilized
 
 boto==2.42.0
 botocore==1.4.52
